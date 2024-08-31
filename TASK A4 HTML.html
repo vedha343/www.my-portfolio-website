@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <script src="validation.js" defer></script> <!-- Link to your JavaScript file -->
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1><img src="PROFILE.jpg" alt="d.v.v.saikrishna">
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            As a passionate tech student with a strong foundation in [your specific field, e.g., c,c++,java,python], 
+            I am dedicated to exploring the cutting edge of technology and applying my skills to real-world challenges.
+            My academic journey has equipped me with proficiency in [list relevant skills, e.g., programming languages like Python, Java, C++, data analysis, software development, etc.], 
+            and I have hands-on experience through projects, internships, and collaborative endeavors.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Other skills...</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        
+        <div class="project">
+            <img src="WEB.jpg" alt="WEB">
+            <h3>Weather App</h3>
+            <p>A web-based weather application built using HTML, CSS, and JavaScript, integrated with the OpenWeatherMap API. This project allows users to search for real-time weather information by city, displaying current conditions, a 5-day forecast, and other weather metrics.</p>
+        </div>
+        
+        <div class="project">
+            <img src="PORT.jpg" alt="PORT">
+            <h3>Portfolio Website</h3>
+            <p>Designed and developed a personal portfolio website to showcase my skills, projects, and achievements. The site is built with responsive design principles using HTML, CSS, and JavaScript, and is hosted on GitHub Pages. It includes sections for an about page, resume, and contact form.</p>
+        </div>
+        
+        <div class="project">
+            <img src="AIML.jpg" alt="AIML">
+            <h3>Machine Learning Model for Predicting House Prices</h3>
+            <p>Developed a machine learning model using Python and scikit-learn to predict house prices based on various features such as location, size, and amenities. The model was trained on a dataset of housing prices and achieved an accuracy of 85%. It includes data preprocessing, feature engineering, and model evaluation.</p>
+        </div>
+        
+        <div class="project">
+            <img src="CHATROBOT.png" alt="CHATROBOT">
+            <h3>Chatbot with Natural Language Processing</h3>
+            <p>Created a chatbot using Python and the Natural Language Toolkit (NLTK) library. The chatbot can understand and respond to user queries in a conversational manner, utilizing various NLP techniques such as tokenization, stemming, and sentiment analysis.</p>
+        </div>
+        
+    </section>
+
+    <!-- Contact Section with Form -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contactForm" onsubmit="return validateForm()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="organization">Organization:</label>
+            <input type="text" id="organization" name="organization" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 DANDIGA V V SAIKRISHNA</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/dvv-sai-krishna-b45505179/?trk=public_profile_browsemap" target="_blank">LinkedIn</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+        </div>
+    </footer>
+</body>
+</html>
